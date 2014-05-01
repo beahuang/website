@@ -1,44 +1,33 @@
 html{
-	font-family: 'Alegreya Sans SC', sans-serif;
 	background-color: rgb(70,162,189);
 }
 
-#navbar{
-text-align: center;
-display: block;
-float: left;
-height: 25px;
-background-color: grey;
-padding: 20px;
-width: 100%;
-border-bottom: 4px solid white;
-border-top: 2px solid white;
-margin-top:-2px solid white;
+body{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	background-color: rgb(70,162,189);
 }
+/*NAVIGATION BAR STYLES*/
+
+.nav {
+	background-color: grey;
+}
+
 a {
 	width:20px;
 	height:20px;
 	color:black;
 }
-a:hover
-{ 
-background-color:rgb(100,100,100);
+a:hover { 
+	background-color:rgb(100,100,100);
 }
 li{
 	display:inline;
-	float:left;
-}
-.nav{
-	font-size: 19px;
-	margin-left:10px;
-	padding-right:10px;
-	border-right:2px solid white;
 }
 
-#Name{
-font-size: 37px;
-margin-top:-9px;
-color: white;
+.name{
+	font-size: 37px;
+	margin-top:-9px;
+	color: white;
 }
 
 #social li{
@@ -111,8 +100,8 @@ a {
 	color:white;
 }
 #workSec #left_col {
-width:400px;
-margin-left:61px;
+	width:400px;
+	margin-left:61px;
 }
 
 #workSec #left_col img{
@@ -145,22 +134,22 @@ margin-left:61px;
 #projSec #box {
 	width: 587px;
 	height: 313px;
-   background: rgb(50,50,50);
-   position: relative;
-   margin-left:40px;
-   margin-top:15px;
-   padding:20px;
-   border-radius:2px;
+	background: rgb(50,50,50);
+	position: relative;
+	margin-left:40px;
+	margin-top:15px;
+	padding:20px;
+	border-radius:2px;
 }
 #projSec #box img {
-border:solid 2px white;
-margin:2px;
-max-height:150px;
-max-width:200px;
-width: auto;
-height: auto;
-background-color: grey;
-float:left;
+	border:solid 2px white;
+	margin:2px;
+	max-height:150px;
+	max-width:200px;
+	width: auto;
+	height: auto;
+	background-color: grey;
+	float:left;
 }
 #projSec #left_col{
 	width:50%;
@@ -195,7 +184,6 @@ float:left;
 #contactSec{
 	background-color: grey;
 	height:250px;
-	width:100%;
 }
 #divider2{
 	background-color: grey;
