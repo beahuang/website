@@ -107,6 +107,7 @@ h1{
 
 #codeSec h2{
 	text-align: center;
+	color:white;
 }
 
 #codeSec p {
@@ -170,7 +171,6 @@ h1{
 #contactSec h1{
 	font-size:60px;
 	color:white;
-
 }
 
 #contactSec li {
@@ -205,4 +205,60 @@ footer img{
 
 footer{
 padding-bottom: 10px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 620px){
+	#artSec #box {
+	width: 425px;
+	height: 500px;
+	}
+}
+
+@media (max-width: 460px){
+	#artSec #box {
+	width: 350px;
+	height: 420px;
+	}
+
+	#artSec #box img {
+	max-height:150px;
+	max-width:150px;
+	}
+}
+
+@media (max-width:530px) {
+	#artSec #bigimg{
+	height: 281px;
+	width: 350px;
+	}
+
+	#artSec h3 {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	margin-top: 100px;
+	}
+
+	#aboutSec p {
+	font-size: 20px;
+	}
+	#workSec p {
+	font-size: 20px;
+	}
+	#contactSec li{
+	font-size:20px;
+	}
+}
+
+@media (max-width:560px) {
+	.name{
+	font-size: 0px;
+	}
+}
+
+@media (max-width:498px) {
+	.nav li a{
+		font-size:17px;
+	}
 }
