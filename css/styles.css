@@ -12,6 +12,10 @@ hr{
 	background-color:white;
 	padding:1px;
 }
+
+h1{
+	margin-left:20px;
+}
 /*NAVIGATION BAR STYLES*/
 
 .nav {
@@ -75,7 +79,6 @@ a:hover {
 #workSec h1{
 	font-size:60px;
 	color:white;
-	text-align: center;
 	padding-bottom:30px;
 }
 #workSec img {
@@ -97,7 +100,7 @@ a:hover {
 	padding-bottom:30px;
 }
 #codeSec img{
-	border-radius: 25%;
+	border-radius: 12%;
 	display:block;
 	margin:auto;
 }
@@ -110,18 +113,18 @@ a:hover {
 	margin: 0 auto;
 	text-align: center;
 	padding-bottom: 20px;
+	font-size:20px;
 }
 
 /*ART SECTION STYLING*/
 #artSec h1{
 	font-size:60px;
 	color:white;
-	text-align: center;
 	padding-bottom:30px;
 }
 
 #artSec #box {
-	margin: auto;
+	margin: 0 auto;
 	width: 620px;
 	height: 350px;
 	background: rgb(50,50,50);
@@ -146,7 +149,7 @@ a:hover {
 	background-color:grey;
 	height:400px;
 	width:500px;
-	margin: auto;
+	margin:0 auto;
 }
 #artSec h3 {
 	font-size: 44px;
@@ -167,6 +170,7 @@ a:hover {
 #contactSec h1{
 	font-size:60px;
 	color:white;
+
 }
 
 #contactSec li {
@@ -180,6 +184,7 @@ a:hover {
 	display: inline-block;
 	float:left;
 	margin-right:10px;
+	width:40px;
 }
 
 footer a{

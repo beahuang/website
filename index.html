@@ -17,23 +17,23 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
 	<script type="text/javascript" src="js/myScript.js"></script>
 </head>
-	<body id="#">
+	<body id="b">
 		<div class='nav'>
 			<div class='container-fluid'>
 				<ul>
 					<li class='name'>Beatrice Huang </li>
 					<li><a href='#'> Home </a></li>
-					<li><a href='#aboutSec'> About </a></li>
-					<li><a href='#workSec'> Work </a></li>
-					<li><a href='#codeSec'> Coding Projects </a></li>
-					<li><a href='#artSec'> Art Work </a></li>
-					<li><a href='#contactSec'> Contact </a></li> 
+					<li><a href='#abSec'> About </a></li>
+					<li><a href='#wSec'> Work </a></li>
+					<li><a href='#cdSec'> Coding Projects </a></li>
+					<li><a href='#arSec'> Art Work </a></li>
+					<li><a href='#ctSec'> Contact </a></li> 
 					<li><a href='resume.pdf'> Resume </a></li> 
 				</ul>
 			</div>
 		</div> <!-- This closes the navbar class --> 
 		<div class='container-fluid'>
-		<hr>
+		<hr id='abSec'>
 			<div id="aboutSec" class="row">
 				<div class="col-md-6">
 					<h1>My name is Beatrice Huang</h1>
@@ -43,7 +43,7 @@
 					<img src="images/me.jpg" class="img-responsive">
 				</div>
 			</div>
-			<hr>
+			<hr id='wSec'>
 			<div id="workSec" class="row">
 				<h1>Work Experience</h1>
 				<div class='col-md-6'>
@@ -55,32 +55,32 @@
 					</p>
 				</div>
 			</div>
-			<hr>
+			<hr id='cdSec'>
 			<div id="codeSec" class="row">
 				<h1>Code-based Projects</h1>
 				<div class="col-md-4">
-					<img src="http://www.placekitten.com/140/140">
-					<h2>Heading</h2>
-					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+					<img src="images/instafilter.png" class="img-responsive">
+					<h2>Instafilter</h2>
+					<p>An online image manipulation site, which allows you to upload a picture and manipulate it using sliders or preset filters. Written in HTML, CSS, jQuery, using the CamanJS canvas manipulation JavaScript Framework</p>
+					<p><a class="btn btn-default" href="/instafilter" role="button">View details &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
 				<div class="col-md-4">
-					<img src="http://www.placekitten.com/140/140">
-					<h2>Heading</h2>
-					<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+					<img src="images/carpe.png" class="img-responsive">
+					<h2>Carpe Noctem</h2>
+					<p>A narrative game where you can navigate through a map and find out what happens to you at each place. This was written in PHP, jQuery, HTML, and CSS.</p>
+					<p><a class="btn btn-default" href="/carpe-noctem" role="button">View details &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
 				<div class="col-md-4">
-					<img  src="http://www.placekitten.com/140/140">
+					<img  src="http://www.placekitten.com/300/300" class="img-responsive">
 					<h2>Heading</h2>
-					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p> TO BE DETERMINED </p>
 					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 				</div><!-- /.col-lg-4 -->
 			</div><!-- /.row -->
-			<hr>
+			<hr id='arSec'>
 			<div id="artSec" class="row">
 				<h1>Art Work</h1>
-				<div class='col-md-8'>
+				<div class='col-md-6'>
 					<div id="box">
 						<div id='img1'> <img src='images/bigbull.jpg' class="img-responsive"></div>
 						<div id='img2'> <img src='images/bigcolor.jpg' class="img-responsive"></div>
@@ -90,14 +90,14 @@
 						<div id='img6'> <img src='images/bigmaze.jpg' class="img-responsive"></div>
 					</div>
 				</div>
-				<div class='col-md-4'> 
+				<div class='col-md-6'> 
 					<div id="bigimg">
 						<h3> CLICK A THUMBNAIL TO SEE THE LARGER PICTURE </h3>
 					</div>
 					<p id='desc'>THIS IS THE DESCRIPTION FOR THE IMAGE </p>
 				</div>
 			</div>
-			<hr>
+			<hr id='ctSec'>
 			<div id="contactSec" class='row'>
 				<h1>Contact Information</h1>
 				<ul>
@@ -113,7 +113,7 @@
 			</div>	
 			<hr>
 			<footer>
-				<a href="#">Back to top</a>
+				<a href="#b">Back to top</a>
 			</footer>
 		</div>
 		<!-- Ends the Bootstrap Container -->
