@@ -5,6 +5,12 @@ html{
 body{
 	font-family: 'Alegreya Sans SC', sans-serif;
 	background-color: rgb(70,162,189);
+	color:black;
+}
+
+hr{
+	background-color:white;
+	padding:1px;
 }
 /*NAVIGATION BAR STYLES*/
 
@@ -12,136 +18,119 @@ body{
 	background-color: grey;
 }
 
-a {
-	width:20px;
-	height:20px;
-	color:black;
-}
-a:hover { 
-	background-color:rgb(100,100,100);
-}
-li{
+.nav li {
 	display:inline;
+	padding-right:5px;
+	color: white;
+	border-right: 2px solid black;
 }
 
 .name{
 	font-size: 37px;
-	margin-top:-9px;
-	color: white;
 }
 
-#social li{
-	margin-top:-10px;
-	margin-left:20px;
-	float:right;
-}
-
-#divider{
-	background-color: rgb(70,162,189);
+.nav a {
+	width:20px;
 	height:20px;
-	margin-top: 2px;
-	width: 100%;
-
-}
-.fb {
-	margin-right: 75px;
-}
-a {
 	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding-right: 5px;
+	padding-left: 10px;
 }
 
-#aboutSec{
-	padding-top:70px;
-	height:500px;
-	background-color: rgb(70,162,189);
-	border-bottom:solid 2px white;
-	width:100%;
+a:hover { 
+	background-color:rgb(100,100,100);
+	text-decoration: none;
+	color:white;
 }
-#aboutSec #left_col{
-	width:50%;
-	margin-left:20px;
-}
-#imagec{
+/*ABOUT SECTION STYLES*/
+
+#aboutSec img{
 	background-color: white;
-	width: 634px;
-	height:446px;
 	border-radius: 2px;
-	margin-left: 50px;
-	padding:3px;
-	float:right;
-	margin-top:-167px;
+	padding:1px;
+	margin: auto;
 }
 
-#left_col p {
-	width:662px;
-	color:black;
-	float:left;
+#aboutSec p {
 	font-size: 30px;
-	margin-left:64px;
-	margin-top:20px;
-}
-
-.title {
-	font-size:60px;
-	float:left;
-	margin-left:30px;
-	margin-top:100px;
-	color:white;
-}
-#workSec{
-	height:500px;
-	background-color: rgb(70,162,189);
-	border-bottom:solid 2px white;
-	width:100%;
-}
-#sec{
-	font-size:60px;
-	margin-left:50px;
-	color:white;
-}
-#workSec #left_col {
-	width:400px;
-	margin-left:61px;
-}
-
-#workSec #left_col img{
-	border:solid 2px black;
-	margin-top:35px;
-	margin-left:65px;
-}
-
-#workSec #left_col #neu{
-	margin-left:47px;
-}
-
-#workSec #right_col {
-	font-size: 30px;
-	width: 742px;
-	float: right;
-	display: block;
-	margin-top: -300px;
-	margin-right: 100px;
 	text-align: center;
 }
-#projSec{
-	height:500px;
+
+#aboutSec h1 {
+	font-size:60px;
+	color:white;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px
+}
+
+/*WORK SECTION STYLING*/
+
+#workSec{
 	background-color: rgb(70,162,189);
-	border-bottom:solid 2px white;
 	width:100%;
 }
+#workSec h1{
+	font-size:60px;
+	color:white;
+	text-align: center;
+	padding-bottom:30px;
+}
+#workSec img {
+	margin:0 auto;
+	border:solid 2px black;
+	margin-bottom:20px;
+}
 
+#workSec p {
+	font-size: 30px;
+	text-align: center;
+	color:black;
+}
+/*CODE SECTION STYLING*/
+#codeSec h1{
+	font-size:60px;
+	color:white;
+	text-align: left;
+	padding-bottom:30px;
+}
+#codeSec img{
+	border-radius: 25%;
+	display:block;
+	margin:auto;
+}
 
-#projSec #box {
-	width: 587px;
-	height: 313px;
+#codeSec h2{
+	text-align: center;
+}
+
+#codeSec p {
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+/*ART SECTION STYLING*/
+#artSec h1{
+	font-size:60px;
+	color:white;
+	text-align: center;
+	padding-bottom:30px;
+}
+
+#artSec #box {
+	margin: auto;
+	width: 620px;
+	height: 350px;
 	background: rgb(50,50,50);
 	position: relative;
-	margin-left:40px;
-	margin-top:15px;
 	padding:20px;
 	border-radius:2px;
+	margin-bottom:10px;
 }
-#projSec #box img {
+#artSec #box img {
 	border:solid 2px white;
 	margin:2px;
 	max-height:150px;
@@ -151,24 +140,15 @@ a {
 	background-color: grey;
 	float:left;
 }
-#projSec #left_col{
-	width:50%;
-}
 
-#projSec #right_col{
-	float:right;
-	margin-top: -425px;
-	margin-right: 59px;
-	width:500px;
-}
-
-#projSec #right_col #bigimg{
+#artSec #bigimg{
 	border:solid 2px white;
 	background-color:grey;
 	height:400px;
 	width:500px;
+	margin: auto;
 }
-.click {
+#artSec h3 {
 	font-size: 44px;
 	color: white;
 	text-align: center;
@@ -180,25 +160,30 @@ a {
 	margin-top:10px;
 	text-align: center;
 }
-
+/*CONTACT SECTION STYLING*/
 #contactSec{
 	background-color: grey;
-	height:250px;
 }
-#divider2{
-	background-color: grey;
-	height:20px;
-	margin-top: 2px;
+#contactSec h1{
+	font-size:60px;
+	color:white;
 }
 
-.info {
-	float:left;
-	font-size:30px;
-	width:600px;
-	margin-left:58px;
-	margin-top:20px;
-}
-.info li {
+#contactSec li {
 	margin-bottom:5px;
+	text-decoration: none;
+	list-style-type: none;
+	font-size:30px;
 }
 
+#social li{
+	display: inline-block;
+	float:left;
+	margin-right:10px;
+}
+
+footer a{
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+}
