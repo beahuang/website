@@ -20,6 +20,7 @@ h1{
 
 .nav {
 	background-color: grey;
+	border-bottom: 2px solid white;
 }
 
 .nav li {
@@ -27,6 +28,10 @@ h1{
 	padding-right:5px;
 	color: white;
 	border-right: 2px solid black;
+}
+
+.nav li:last-child{
+	border-right: 0px solid black;
 }
 
 .name{
@@ -55,6 +60,7 @@ h1{
 	border-radius: 2px;
 	padding:1px;
 	margin: auto;
+	margin-top: 20px;
 }
 
 #aboutSec p {
@@ -81,10 +87,42 @@ h1{
 	color:white;
 	padding-bottom:30px;
 }
-#workSec img {
+#comp{
+	position: relative;
+}
+#comp:hover{
+	cursor:pointer;
+}
+
+
+#comp .comp{
+	margin: 0 auto;
+	background-size: 100% 100%;
+	background-image: url("../icons/comp.png");
+	height: 100%;
+	width:100%;
+}
+
+#comp li{
+	text-decoration: none;
+	display: inline;
+	z-index: 1;
+	position: relative;
+}
+#comp li img{
+	width: 50px;
+}
+
+.open{
+
+	cursor: default;
+}
+
+#workSec .work {
 	margin:0 auto;
 	border:solid 2px black;
 	margin-bottom:20px;
+	display: block;
 }
 
 #workSec p {
@@ -92,6 +130,7 @@ h1{
 	text-align: center;
 	color:black;
 }
+
 /*CODE SECTION STYLING*/
 #codeSec h1{
 	font-size:60px;
@@ -118,6 +157,9 @@ h1{
 }
 
 /*ART SECTION STYLING*/
+#artSec{
+	padding-bottom: 20px;
+}
 #artSec h1{
 	font-size:60px;
 	color:white;
@@ -167,6 +209,8 @@ h1{
 /*CONTACT SECTION STYLING*/
 #contactSec{
 	background-color: grey;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
 }
 #contactSec h1{
 	font-size:60px;
@@ -204,10 +248,23 @@ footer img{
 }
 
 footer{
+padding-top: 20px;
 padding-bottom: 10px;
 }
 
 /*MEDIA QUERIES*/
+
+@media all and (max-width: 1240px) and (min-width: 990px ) {
+	#artSec #box {
+	width: 350px;
+	height: 420px;
+	}
+
+	#artSec #box img {
+	max-height:150px;
+	max-width:150px;
+	}
+}
 @media (max-width: 620px){
 	#artSec #box {
 	width: 425px;
@@ -231,6 +288,10 @@ padding-bottom: 10px;
 	#artSec #bigimg{
 	height: 281px;
 	width: 350px;
+	}
+
+	#artSec #bigimg img{
+	max-width: 100%
 	}
 
 	#artSec h3 {
@@ -262,3 +323,75 @@ padding-bottom: 10px;
 		font-size:17px;
 	}
 }
+
+@media (max-width: 340px){
+	#artSec #box {
+	width: 280px;
+	height: 1337px;
+	padding: 2px;
+	}
+
+	#artSec #box img {
+	max-width: 272px;
+	max-height: 300px;
+	}
+
+	#artSec #bigimg{
+	display: none;
+	}
+
+	#artSec #bigimg img{
+	display: none;
+	}
+
+	#aboutSec h1 {
+	font-size: 40px;
+	}
+	#workSec h1 {
+	font-size: 40px;
+	}
+	#codeSec h1{
+	font-size: 40px;
+	}
+	#artSec h1{
+	font-size: 40px;
+	}
+	#contactSec h1{
+	font-size:40px;
+	}
+}
+
+@media (max-width: 300px){
+	#artSec #box {
+	width: 195px;
+	height: 930px;
+	padding: 2px;
+	}
+
+	#artSec #box img {
+	max-width:187px;
+	}
+
+	#artSec #bigimg{
+	display: none;
+	}
+
+	#artSec #bigimg img{
+	display: none;
+	}
+
+	#contactSec h1{
+	font-size:35px;
+	}
+
+	#contactSec li{
+	font-size:15px;
+	}
+
+	footer a{
+	font-size:25px;
+	}
+}
+
+
+

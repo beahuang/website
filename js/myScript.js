@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+		// $("#comp").click(function(){		   
+		// 	if ($("#comp").hasClass('col-md-3')) {
+		// 	  $( "#comp").addClass( "col-md-10").removeClass('col-md-3');
+		// 	} else {
+		// 	   $( "#comp").addClass( "col-md-3").removeClass('col-md-10');
+		// 	}
+		// 	});  
+
 			//click function
 			$("#img1").click(function() {
 				$('#bigimg').html("<img src='images/bigbull.jpg' class='img-responsive'>");
