@@ -11,7 +11,7 @@ $(document).ready(function(){
 			//click function
 			$("#img1").click(function() {
 				$('#bigimg').html("<img src='images/bigbull.jpg' class='img-responsive'>");
-				$('#desc').html('This was a 3D Carving of a Bull from a Dry Foam Block');
+				$('#desc').html('This is a 3D Carving of a Bull from a Dry Foam Block');
 			});
 			$("#img2").click(function() {
 				$('#bigimg').html("<img src='images/bigcolor.jpg' class='img-responsive'>");
@@ -19,19 +19,19 @@ $(document).ready(function(){
 			});
 			$("#img3").click(function() {
 				$('#bigimg').html("<img src='images/bigpaint.jpg' class='img-responsive'>");
-				$('#desc').html('This was the painted version of my photoshop color collage using acrylic paint');
+				$('#desc').html('This is the painted version of my photoshop color collage using acrylic paint');
 			})
 			$("#img4").click(function() {
 				$('#bigimg').html("<img src='images/bigdrag.jpg' class='img-responsive'>");
-				$('#desc').html('This was an art piece that used grids and was drawn using sharpie');
+				$('#desc').html('This is an art piece that used grids and was drawn using sharpie');
 			});
 			$("#img5").click(function() {
 				$('#bigimg').html("<img src='images/bigfish.jpg' class='img-responsive'>");
-				$('#desc').html('This was an art installation inside a building made with tape and saran wrap');
+				$('#desc').html('This is an art installation inside a building made with tape and saran wrap');
 			});
 			$("#img6").click(function() {
 				$('#bigimg').html("<img src='images/bigmaze.jpg' class='img-responsive'>");
-				$('#desc').html('This was a lazer-cut model of a 3D maze');
+				$('#desc').html('This is a lazer-cut model of a 3D maze');
 			});
 
 			$('a[href*=#]:not([href=#])').click(function() {
@@ -49,11 +49,18 @@ $(document).ready(function(){
 
 			var offset = 150;
 			var duration = 500;
-			jQuery(window).scroll(function() {
-				if (jQuery(this).scrollTop() > offset) {
-					jQuery('.back-to-top').fadeIn(duration);
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > offset) {
+					$('.back-to-top').fadeIn(duration);
 				} else {
-					jQuery('.back-to-top').fadeOut(duration);
+					$('.back-to-top').fadeOut(duration);
+				}
+			});
+
+			var offset = 150;
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > offset) {
+					$('#comp img').attr('src','icons/comp1.png');
 				}
 			});
 		});
