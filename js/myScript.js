@@ -57,9 +57,10 @@ $(document).ready(function(){
 				}
 			});
 
-			var offset = 150;
+			var top1 = 600;
+			var top2 = 3000;
 			$(window).scroll(function() {
-				if ($(this).scrollTop() > offset) {
+				if ($(this).scrollTop() > top1) {
 					$('#comp img').attr('src','icons/comp1.png');
 				}
 			});
