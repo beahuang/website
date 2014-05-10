@@ -434,32 +434,30 @@ background: url('../backgrounds/terminal.jpg') no-repeat center center fixed;
 }
 /*CONTACT SECTION STYLING*/
 #contactSec{
-	background: url('../backgrounds/contact.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-color: grey;
     border-bottom: 1.5px solid white;
 }
 #contactSec h1{
-	font-size:60px;
+	font-size:50px;
 	color:white;
 	padding-top: 30px;
+	text-align: center;
+	padding-bottom:20px;
 }
 
-#contactSec li {
+#contactSec ul {
 	margin-bottom:5px;
 	text-decoration: none;
 	list-style-type: none;
 	font-size:30px;
+	text-align: center;
 }
 
 #social li{
 	display: inline-block;
-	float:left;
 	margin-right:10px;
 	width:40px;
-	padding-bottom: 20px
+	padding-bottom: 20px;
 }
 
 .back-to-top {
