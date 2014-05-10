@@ -455,9 +455,13 @@ background: url('../backgrounds/terminal.jpg') no-repeat center center fixed;
 
 #social li{
 	display: inline-block;
-	margin-right:10px;
-	width:40px;
-	padding-bottom: 20px;
+	margin-right:5px;
+	width:65px;
+	padding-bottom: 10px;
+}
+
+li:hover{
+	opacity:.4;
 }
 
 .back-to-top {
