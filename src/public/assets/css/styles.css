@@ -1,0 +1,755 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\000031}}
+html {
+  /*  background-image: url('../images/background.jpg');
+  */
+  background-repeat: repeat-y;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\000036}}
+body {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000311}}
+hr {
+  background-color: white;
+  padding: 1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000316}}
+h1 {
+  margin-left: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000320}}
+#cont {
+  padding-right: 0px;
+}
+
+/*NAVIGATION BAR STYLES*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000326}}
+.nav {
+  background-color: grey;
+  border-bottom: 2px solid white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000334}}
+.nav li {
+  display: inline;
+  margin-right: 5px;
+  color: white;
+  border-right: 2px solid black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000341}}
+.nav li:last-child {
+  border-right: 0px solid black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000345}}
+.name {
+  font-size: 37px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000349}}
+.nav a {
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000359}}
+.nav a:hover {
+  background-color: #646464;
+  text-decoration: none;
+  color: white;
+}
+
+/*Header SECTION STYLES*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000365}}
+#header {
+  background: url("../backgrounds/me.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  border-bottom: 1.5px solid grey;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000374}}
+.section-overlay-mask {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0.60;
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000383}}
+#header h1 {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  padding-top: 90px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000389}}
+#header .col-md-12 {
+  height: 70%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000392}}
+#header p {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\0000397}}
+#txt {
+  top: 30%;
+}
+
+/*ABOUT SECTION STYLES*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003102}}
+#aboutSec {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 50px;
+  background: url("../backgrounds/circles.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003112}}
+#aboutSec h1 {
+  font-size: 60px;
+  color: black;
+  padding-bottom: 30px;
+  font-weight: 700;
+  padding-top: 75px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003119}}
+#aboutSec h2 {
+  font-size: 45px;
+  text-align: center;
+  color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003124}}
+#aboutSec p {
+  font-size: 25px;
+  text-align: left;
+  color: black;
+  padding-bottom: 30px;
+}
+
+/*About CSS Transitions*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003133}}
+#aboutSec li {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003140}}
+#aboutSec .circ {
+  padding-top: 30px;
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003152}}
+#aboutSec h6 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003159}}
+.ch-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  cursor: default;
+  box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003171}}
+.ch-big {
+  background-image: url(../images/circbig.jpg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003174}}
+.ch-img-1 {
+  background-image: url(../images/circ1.jpg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003178}}
+.ch-img-2 {
+  background-image: url(../images/circ2.jpg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003182}}
+.ch-img-3 {
+  background-image: url(../images/circ3.jpg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003186}}
+.ch-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+  backface-visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003198}}
+.ch-info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 22px;
+  /* margin: 0 30px; */
+  padding: 65px 0 0 0;
+  height: 110px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003212}}
+.ch-info p {
+  color: #fff;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003222}}
+.ch-info p a {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003234}}
+.ch-info p a:hover {
+  color: rgba(255, 242, 34, 0.8);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003238}}
+.ch-item:hover {
+  box-shadow: inset 0 0 0 110px rgba(0, 59, 241, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003244}}
+.ch-item:hover .ch-info {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*WORK SECTION STYLING*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003251}}
+#workSec {
+  font-family: 'Raleway', sans-serif;
+  background: url("../backgrounds/desk.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 1.5px solid grey;
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003262}}
+#workSec h1 {
+  font-size: 60px;
+  color: brown;
+  padding-bottom: 10px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003269}}
+#workSec h5 {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003272}}
+#comp {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003276}}
+#comp:hover {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003281}}
+#comp img {
+  margin: 0 auto;
+  background-size: 100% 100%;
+  height: 80%;
+  width: 80%;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003289}}
+#workSec li {
+  text-decoration: none;
+  display: inline;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003294}}
+#workSec li img {
+  width: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003298}}
+#workSec .work {
+  margin: 0 auto;
+  border: solid 2px black;
+  margin-bottom: 20px;
+  display: block;
+  width: 50%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003306}}
+#workSec p {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  padding-bottom: 21px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003313}}
+#workSec h5 {
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003317}}
+#icon {
+  left: 50%;
+}
+
+/*CODE SECTION STYLING*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003322}}
+#codeSec {
+  font-family: 'Press Start 2P', cursive;
+  background: url("../backgrounds/terminal.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 1.5px solid grey;
+  color: #046c04;
+  height: 100%;
+  padding-bottom: 50px;
+  padding: 30px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003335}}
+#codeSec h1 {
+  font-size: 40px;
+  color: white;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003342}}
+#codeSec img {
+  border-radius: 12%;
+  display: block;
+  margin: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003348}}
+#codeSec h2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003354}}
+#codeSec p {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 10px;
+}
+
+/*ART SECTION STYLING*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003363}}
+#artSec {
+  background: url("../backgrounds/paper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 1.5px solid grey;
+  font-family: 'Carter One', cursive;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003373}}
+#artSec {
+  padding-bottom: 100px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003376}}
+#artSec h1 {
+  font-size: 60px;
+  color: black;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  margin-left: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003383}}
+#art {
+  padding: 40px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003386}}
+#artSec #box {
+  margin: 0 auto;
+  width: 615px;
+  height: 350px;
+  /*background: url('../backgrounds/wood.jpg');*/
+  position: relative;
+  /*padding:20px;*/
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003397}}
+#artSec #box img {
+  border: solid 1px white;
+  margin: 2px;
+  max-height: 150px;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+  /*background: url('../backgrounds/wood.jpg');*/
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003408}}
+#artSec #box img:hover {
+  opacity: .6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003412}}
+#artSec #bigimg {
+  border: solid 1px black;
+  /*background: url('../backgrounds/wood.jpg');*/
+  background-color: black;
+  background-position: -116px 161px;
+  width: 480px;
+  margin: 0 auto;
+  height: 380px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003422}}
+#artSec h3 {
+  font-size: 44px;
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003429}}
+#desc {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*CONTACT SECTION STYLING*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003435}}
+#contactSec {
+  background-color: grey;
+  border-bottom: 1.5px solid white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003439}}
+#contactSec h1 {
+  font-size: 50px;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003447}}
+#contactSec ul {
+  margin-bottom: 5px;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003455}}
+#social li {
+  display: inline-block;
+  margin-right: 5px;
+  width: 65px;
+  padding-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003462}}
+li:hover {
+  opacity: .4;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003466}}
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  padding: 1em;
+  display: none;
+  opacity: .65;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003475}}
+.back-to-top img {
+  width: 50px;
+}
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 1240px) and (min-width: 990px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003482}}
+  #artSec #box {
+    width: 350px;
+    height: 420px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003487}}
+  #artSec #box img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+@media (max-width: 1204px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003494}}
+  .name {
+    font-size: 0px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003497}}
+  #workSec p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 620px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003503}}
+  #artSec #box {
+    width: 425px;
+    height: 500px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003507}}
+  #workSec p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 460px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003513}}
+  #artSec #box {
+    width: 350px;
+    height: 420px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003518}}
+  #artSec #box img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+@media (max-width: 530px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003525}}
+  #artSec #bigimg {
+    height: 281px;
+    width: 350px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003530}}
+  #artSec #bigimg img {
+    max-width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003534}}
+  #artSec h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003541}}
+  #aboutSec p {
+    font-size: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003545}}
+  #contactSec li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 498px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003551}}
+  .nav li a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 340px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003558}}
+  #codeSec h1 {
+    font-size: 25px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003561}}
+  #artSec #box {
+    width: 280px;
+    height: 1337px;
+    padding: 2px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003567}}
+  #artSec #box img {
+    max-width: 272px;
+    max-height: 300px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003572}}
+  #artSec #bigimg {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003576}}
+  #artSec #bigimg img {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003580}}
+  #aboutSec h1 {
+    font-size: 40px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003583}}
+  #workSec h1 {
+    font-size: 40px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003586}}
+  #artSec h1 {
+    font-size: 40px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003589}}
+  #contactSec h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 300px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003595}}
+  #artSec #box {
+    width: 195px;
+    height: 930px;
+    padding: 2px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003601}}
+  #artSec #box img {
+    max-width: 187px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003605}}
+  #artSec #bigimg {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003609}}
+  #artSec #bigimg img {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003613}}
+  #contactSec h1 {
+    font-size: 35px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003617}}
+  #contactSec li {
+    font-size: 15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003621}}
+  #workSec .work {
+    max-width: 170px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003625}}
+  #header h1 {
+    font-size: 40px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003628}}
+  #header p {
+    font-size: 13px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003632}}
+  #workSec h1 {
+    font-size: 30px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Beatrice\/Documents\/www\.beatricehuang\.com\/website\/src\/scss\/styles\.scss}line{font-family:\00003636}}
+  #workSec p {
+    font-size: 13px;
+  }
+}
