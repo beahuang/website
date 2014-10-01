@@ -5,10 +5,45 @@ var map;
 var centerPos = new google.maps.LatLng(42.339807,-71.089172);
 var zoomLevel = 12;
 function initialize() {
-  var styles = [
+  var styles =[
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#e0efef"
+            }
+        ]
+    },
     {
         "featureType": "poi",
+        "elementType": "geometry.fill",
         "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "hue": "#1900ff"
+            },
+            {
+                "color": "#badeea"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill"
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 100
+            },
             {
                 "visibility": "simplified"
             }
@@ -19,7 +54,8 @@ function initialize() {
         "elementType": "labels",
         "stylers": [
             {
-                "visibility": "simplified"
+                "visibility": "off",
+                "color": "#cad0c9"
             }
         ]
     },
@@ -27,69 +63,7 @@ function initialize() {
         "featureType": "water",
         "stylers": [
             {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "stylers": [
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "stylers": [
-            {
-                "color": "#84afa3"
-            },
-            {
-                "lightness": 52
-            }
-        ]
-    },
-    {
-        "stylers": [
-            {
-                "saturation": -17
-            },
-            {
-                "gamma": 0.36
+                "color": "#3e5068"
             }
         ]
     },
@@ -98,35 +72,23 @@ function initialize() {
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#3f518c"
+                "visibility": "on"
+            },
+            {
+                "lightness": 700
             }
         ]
-    },{
-    "elementType": "labels",
-    "stylers": [
-    { "hue": "#405191" }
-    ]
-  },{
-    "elementType": "labels.text.fill",
-    "stylers": [
-    { "color": "#FFFFFF" }
-    ]
-  },{
-    "elementType": "labels.text.stroke",
-    "stylers": [
-    { "color": "#000000" }
-    ]
-  },
+    }
 ];
-  var mapOptions = {
+var mapOptions = {
     center: centerPos,
     zoom: zoomLevel
-  };
-  map = new google.maps.Map( document.getElementById("map-canvas"), mapOptions );
-  var locations = [
-  ["Boston", 42.339807,-71.089172],
-  ["New York", 40.7699171,-73.770243]
-  ];
+};
+map = new google.maps.Map( document.getElementById("map-canvas"), mapOptions );
+var locations = [
+["Boston", 42.339807,-71.089172],
+["New York", 40.7699171,-73.770243]
+];
   // var image = "trans-icon.png";
 
   for (var i = 0; i < locations.length; i++) {
@@ -135,10 +97,10 @@ function initialize() {
       title: locations[i][0],
       map: map
       // ,icon: image
-    });
-  }
-  var styledMap = new google.maps.StyledMapType( styles, {name: "Styled Map"} );
-  map.mapTypes.set("map_style", styledMap);
-  map.setMapTypeId("map_style");
+  });
+}
+var styledMap = new google.maps.StyledMapType( styles, {name: "Styled Map"} );
+map.mapTypes.set("map_style", styledMap);
+map.setMapTypeId("map_style");
 }
 google.maps.event.addDomListener(window, "load", initialize);

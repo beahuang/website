@@ -15,45 +15,41 @@
 	<link rel="stylesheet" href="assets/css/styles.css">
 
 	<!-- JavaScript Libraries -->
-	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Press+Start+2P|Carter+One|Raleway:500,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Press+Start+2P|Carter+One|Raleway:500,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/myScript.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	<script src='assets/js/map.js'></script>
 </head>
 <body id="b">
 	<div class='nav'>
 		<div class='container-fluid'>
-			<li class='name'>Beatrice Huang </li>
-			<li><a href='#b'> Top </a></li>
-			<li><a href='#aboutSec'> About </a></li>
-			<li><a href='#workSec'> Experience </a></li>
-			<li><a href='#codeSec'> Coding Projects </a></li>
-			<li><a href='#artSec'> Art Work </a></li>
-			<li><a href='#contactSec'> Contact </a></li>
-			<li><a href='resume.pdf'target="_blank"> Resume </a></li>
+			<li><a href='#b'>HOME</a></li>
+			<li><a href='#aboutSec'>ABOUT</a></li>
+			<li><a href='#codeSec'>CODING</a></li>
+			<li><a href='#artSec'>ART</a></li>
+			<li><a href='#contactSec'>CONTACT</a></li>
+			<li><a href='resume.pdf'target="_blank">RESUMÉ</a></li>
 		</div>
 	</div> <!-- This closes the navbar class -->
 	<div id='cont' class='container-fluid'>
 		<div id="header" class="row">
 			<div class="section-overlay-mask"> </div>
 			<div class= 'col-md-12' id='txt'>
-				<h1>Beatrice Huang</h1>
+				<h1>BEATRICE HUANG</h1>
 				<p>designer and developer</p>
 			</div>
 		</div>
 		<div id="aboutSec" class="row">
 			<div class='col-md-6'>
-				<h1>About Me</h1>
+				<h1>ABOUT</h1>
 				<p>I'm a 19 year old New Yorker pursuing my degree in Computer Science and Interactive Media at Northeastern University.
-				</p>
-				<p> What does that mean? </p>
-				<p>It means I love creating cool things and then designing them to be visually appealing as well. I'm always up for new experiences so check out my contact section and hit me up!
-				</p>
 			</div>
 			<div class='col-md-6'>
 				<div class='col-md-12'>
 					<div class="circ ch-big"></div>
 				</div>
-				<h6> Some of my interests</h6>
+				<h6> Some Interests</h6>
 				<li>
 					<div class="ch-item ch-img-1">
 						<div class="ch-info">
@@ -80,11 +76,10 @@
 	</div>
 	<!-- 		<hr id='wSec'> -->
 	<div id="workSec" class="row">
-		<h1>Experience</h1>
+		<h1>WORK</h1>
 		<div class='col-md-1'></div>
 		<div class='col-md-10'>
-			<p> Currently, I am on summer break and searching for an internship. I've been employed by Northeastern as a Computer Lab Technician and as a College of Computer Science Tutor. I also have experience in Quality Assurance from an internship at Euromoney Institutional Investor. If you want more information check out my resume!
-			</p>
+			<p></p>
 		</div>
 		<div class='col-md-1'></div>
 		<div class='col-md-6'>
@@ -157,7 +152,10 @@
 		</div>
 	</div>
 	<div id="contactSec" class='row'>
-		<h1>Contact Me</h1>
+		<div class="map">
+			<div id="map-canvas"></div>
+		</div>
+		<h1>CONTACT ME</h1>
 		<ul id="social">
 			<li> <a href="mailto:huang.be@husky.neu.edu"> <img src="assets/social/email.png" class="img-responsive"></a></li>
 			<li> <a href="https://www.facebook.com/beatrice.huang.33" target="_blank"> <img src="assets/social/facebook.png" class="img-responsive"></a></li>
@@ -165,6 +163,7 @@
 			<li> <a href="https://github.com/beahuang" target="_blank"> <img src="assets/social/github.png" class="img-responsive"></a></li>
 		</ul>
 	</div>
+
 	<a href="#b" class='back-to-top'>
 		<img src='assets/images/upArrow.png'>
 	</a>
