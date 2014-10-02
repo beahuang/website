@@ -2,7 +2,7 @@
 /*global google*/
 
 var map;
-var centerPos = new google.maps.LatLng(42.339807,-71.089172);
+var centerPos = new google.maps.LatLng(42.358496,-71.0595335);
 var zoomLevel = 12;
 function initialize() {
   var styles =[
@@ -86,7 +86,7 @@ var mapOptions = {
 };
 map = new google.maps.Map( document.getElementById("map-canvas"), mapOptions );
 var locations = [
-["Boston", 42.339807,-71.089172],
+["Boston", 42.358496,-71.0595335],
 ["New York", 40.7699171,-73.770243]
 ];
   // var image = "trans-icon.png";

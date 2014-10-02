@@ -1,0 +1,763 @@
+/* line 1, ../../../scss/styles.scss */
+html {
+  /*  background-image: url('../images/background.jpg');
+  */
+  background-repeat: repeat-y;
+}
+
+/* line 6, ../../../scss/styles.scss */
+body {
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+/* line 11, ../../../scss/styles.scss */
+hr {
+  background-color: white;
+  padding: 1px;
+}
+
+/* line 16, ../../../scss/styles.scss */
+h1 {
+  margin-left: 20px;
+}
+
+/* line 20, ../../../scss/styles.scss */
+#cont {
+  padding-right: 0px;
+}
+
+/*NAVIGATION BAR STYLES*/
+/* line 26, ../../../scss/styles.scss */
+.nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 1px 2px grey;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 10px 15px;
+  display: flex;
+}
+/* line 34, ../../../scss/styles.scss */
+.nav li {
+  display: inline;
+  margin-right: 5px;
+  padding: 0px 15px;
+}
+/* line 39, ../../../scss/styles.scss */
+.nav a {
+  text-decoration: none;
+  font-size: 1em;
+  color: lightgrey;
+  margin-right: 5px;
+  margin-left: 10px;
+  transition: all, 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+/* line 50, ../../../scss/styles.scss */
+.nav a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #35A6FF;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+/* line 62, ../../../scss/styles.scss */
+.nav a:hover {
+  color: white;
+}
+/* line 64, ../../../scss/styles.scss */
+.nav a:hover:before {
+  width: 100%;
+}
+
+/*Header SECTION STYLES*/
+/* line 72, ../../../scss/styles.scss */
+#header {
+  background: url("../backgrounds/me.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  border-bottom: 1.5px solid grey;
+}
+
+/* line 81, ../../../scss/styles.scss */
+.section-overlay-mask {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0.60;
+  display: block;
+}
+
+/* line 90, ../../../scss/styles.scss */
+#header h1 {
+  font-size: 4.5em;
+  color: white;
+  text-align: center;
+  padding-top: 90px;
+}
+
+/* line 96, ../../../scss/styles.scss */
+#header .col-md-12 {
+  height: 70%;
+}
+
+/* line 99, ../../../scss/styles.scss */
+#header p {
+  font-size: 1em;
+  text-align: center;
+  color: white;
+}
+
+/* line 104, ../../../scss/styles.scss */
+#txt {
+  top: 30%;
+}
+
+/*ABOUT SECTION STYLES*/
+/* line 109, ../../../scss/styles.scss */
+#aboutSec {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 50px;
+  background: url("../backgrounds/circles.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 119, ../../../scss/styles.scss */
+#aboutSec h1 {
+  font-size: 60px;
+  color: black;
+  padding-bottom: 30px;
+  font-weight: 700;
+  padding-top: 75px;
+}
+
+/* line 126, ../../../scss/styles.scss */
+#aboutSec h2 {
+  font-size: 45px;
+  text-align: center;
+  color: black;
+}
+
+/* line 131, ../../../scss/styles.scss */
+#aboutSec p {
+  font-size: 25px;
+  text-align: left;
+  color: black;
+  padding-bottom: 30px;
+}
+
+/*About CSS Transitions*/
+/* line 140, ../../../scss/styles.scss */
+#aboutSec li {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* line 147, ../../../scss/styles.scss */
+#aboutSec .circ {
+  padding-top: 30px;
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* line 159, ../../../scss/styles.scss */
+#aboutSec h6 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+/* line 165, ../../../scss/styles.scss */
+.ch-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  cursor: default;
+  box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 177, ../../../scss/styles.scss */
+.ch-big {
+  background-image: url(../images/circbig.jpg);
+}
+
+/* line 180, ../../../scss/styles.scss */
+.ch-img-1 {
+  background-image: url(../images/circ1.jpg);
+}
+
+/* line 184, ../../../scss/styles.scss */
+.ch-img-2 {
+  background-image: url(../images/circ2.jpg);
+}
+
+/* line 188, ../../../scss/styles.scss */
+.ch-img-3 {
+  background-image: url(../images/circ3.jpg);
+}
+
+/* line 192, ../../../scss/styles.scss */
+.ch-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+  backface-visibility: hidden;
+}
+/* line 202, ../../../scss/styles.scss */
+.ch-info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 22px;
+  /* margin: 0 30px; */
+  padding: 65px 0 0 0;
+  height: 110px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+/* line 216, ../../../scss/styles.scss */
+.ch-info p {
+  color: #fff;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+/* line 224, ../../../scss/styles.scss */
+.ch-info p a {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+/* line 234, ../../../scss/styles.scss */
+.ch-info p a:hover {
+  color: rgba(255, 242, 34, 0.8);
+}
+/* line 240, ../../../scss/styles.scss */
+.ch-info:hover {
+  box-shadow: inset 0 0 0 110px rgba(0, 59, 241, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 245, ../../../scss/styles.scss */
+.ch-info:hover .ch-info {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*WORK SECTION STYLING*/
+/* line 254, ../../../scss/styles.scss */
+#workSec {
+  font-family: 'Raleway', sans-serif;
+  background: url("../backgrounds/desk.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 50px;
+  border-bottom: 1.5px solid grey;
+  padding: 20px;
+}
+/* line 265, ../../../scss/styles.scss */
+#workSec h1 {
+  font-size: 60px;
+  color: brown;
+  padding-bottom: 10px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+/* line 273, ../../../scss/styles.scss */
+#workSec h5 {
+  text-align: center;
+}
+/* line 277, ../../../scss/styles.scss */
+#workSec #comp {
+  position: relative;
+  padding-bottom: 20px;
+}
+/* line 280, ../../../scss/styles.scss */
+#workSec #comp:hover {
+  cursor: pointer;
+}
+/* line 283, ../../../scss/styles.scss */
+#workSec #comp img {
+  margin: 0 auto;
+  background-size: 100% 100%;
+  height: 80%;
+  width: 80%;
+  position: relative;
+}
+/* line 291, ../../../scss/styles.scss */
+#workSec li {
+  text-decoration: none;
+  display: inline;
+  position: relative;
+}
+/* line 295, ../../../scss/styles.scss */
+#workSec li img {
+  width: 60px;
+}
+/* line 299, ../../../scss/styles.scss */
+#workSec .work {
+  margin: 0 auto;
+  border: solid 2px black;
+  margin-bottom: 20px;
+  display: block;
+  width: 50%;
+}
+/* line 307, ../../../scss/styles.scss */
+#workSec p {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  padding-bottom: 21px;
+}
+/* line 314, ../../../scss/styles.scss */
+#workSec h5 {
+  font-size: 15px;
+  padding-top: 20px;
+}
+/* line 318, ../../../scss/styles.scss */
+#workSec #icon {
+  left: 50%;
+}
+
+/*CODE SECTION STYLING*/
+/* line 324, ../../../scss/styles.scss */
+#codeSec {
+  font-family: 'Press Start 2P', cursive;
+  background: url("../backgrounds/terminal.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 1.5px solid grey;
+  color: #046c04;
+  height: 100%;
+  padding-bottom: 50px;
+  padding: 30px;
+}
+/* line 337, ../../../scss/styles.scss */
+#codeSec h1 {
+  font-size: 40px;
+  color: white;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+/* line 344, ../../../scss/styles.scss */
+#codeSec img {
+  border-radius: 12%;
+  display: block;
+  margin: auto;
+}
+/* line 350, ../../../scss/styles.scss */
+#codeSec h2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+/* line 356, ../../../scss/styles.scss */
+#codeSec p {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 10px;
+}
+
+/*ART SECTION STYLING*/
+/* line 366, ../../../scss/styles.scss */
+#artSec {
+  background: url("../backgrounds/paper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-bottom: 1.5px solid grey;
+  font-family: 'Carter One', cursive;
+  height: 100%;
+  padding-bottom: 100px;
+}
+/* line 376, ../../../scss/styles.scss */
+#artSec h1 {
+  font-size: 60px;
+  color: black;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  margin-left: 40px;
+}
+/* line 383, ../../../scss/styles.scss */
+#artSec #art {
+  padding: 40px;
+}
+/* line 386, ../../../scss/styles.scss */
+#artSec #box {
+  margin: 0 auto;
+  width: 615px;
+  height: 350px;
+  /*background: url('../backgrounds/wood.jpg');*/
+  position: relative;
+  /*padding:20px;*/
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+/* line 396, ../../../scss/styles.scss */
+#artSec #box img {
+  border: solid 1px white;
+  margin: 2px;
+  max-height: 150px;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+  /*background: url('../backgrounds/wood.jpg');*/
+  float: left;
+}
+/* line 405, ../../../scss/styles.scss */
+#artSec #box img:hover {
+  opacity: .6;
+}
+/* line 410, ../../../scss/styles.scss */
+#artSec #bigimg {
+  border: solid 1px black;
+  /*background: url('../backgrounds/wood.jpg');*/
+  background-color: black;
+  background-position: -116px 161px;
+  width: 480px;
+  margin: 0 auto;
+  height: 380px;
+}
+/* line 419, ../../../scss/styles.scss */
+#artSec h3 {
+  font-size: 44px;
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+}
+/* line 425, ../../../scss/styles.scss */
+#artSec #desc {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*CONTACT SECTION STYLING*/
+/* line 433, ../../../scss/styles.scss */
+#contactSec {
+  background: url("../backgrounds/city.png") center no-repeat;
+  background-size: cover;
+}
+/* line 437, ../../../scss/styles.scss */
+#contactSec h1 {
+  font-size: 2em;
+  color: white;
+  text-shadow: 0px 1px 2px #000;
+  margin-left: 50px;
+}
+/* line 443, ../../../scss/styles.scss */
+#contactSec .box {
+  height: 300px;
+  width: 280px;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* line 451, ../../../scss/styles.scss */
+#contactSec .box .circ {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-size: contain;
+}
+/* line 461, ../../../scss/styles.scss */
+#contactSec .box #social {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+/* line 468, ../../../scss/styles.scss */
+#contactSec .box #social li {
+  display: inline-block;
+}
+/* line 471, ../../../scss/styles.scss */
+#contactSec .box #social li img {
+  width: 50px;
+}
+/* line 476, ../../../scss/styles.scss */
+#contactSec .box #social li:hover img {
+  opacity: 0.7;
+}
+/* line 483, ../../../scss/styles.scss */
+#contactSec .triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #FFF;
+  margin: 0 auto;
+}
+
+/* line 493, ../../../scss/styles.scss */
+.map {
+  height: 150px;
+  width: 100%;
+}
+/* line 497, ../../../scss/styles.scss */
+.map #map-canvas {
+  height: 100%;
+}
+
+/* line 502, ../../../scss/styles.scss */
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  padding: 1em;
+  display: none;
+  opacity: .65;
+}
+/* line 510, ../../../scss/styles.scss */
+.back-to-top img {
+  width: 50px;
+}
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 1240px) and (min-width: 990px) {
+  /* line 518, ../../../scss/styles.scss */
+  #artSec #box {
+    width: 350px;
+    height: 420px;
+  }
+
+  /* line 523, ../../../scss/styles.scss */
+  #artSec #box img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+@media (max-width: 1204px) {
+  /* line 530, ../../../scss/styles.scss */
+  .name {
+    font-size: 0px;
+  }
+
+  /* line 533, ../../../scss/styles.scss */
+  #workSec p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 620px) {
+  /* line 539, ../../../scss/styles.scss */
+  #artSec #box {
+    width: 425px;
+    height: 500px;
+  }
+
+  /* line 543, ../../../scss/styles.scss */
+  #workSec p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 460px) {
+  /* line 549, ../../../scss/styles.scss */
+  #artSec #box {
+    width: 350px;
+    height: 420px;
+  }
+
+  /* line 554, ../../../scss/styles.scss */
+  #artSec #box img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+@media (max-width: 530px) {
+  /* line 561, ../../../scss/styles.scss */
+  #artSec #bigimg {
+    height: 281px;
+    width: 350px;
+  }
+
+  /* line 566, ../../../scss/styles.scss */
+  #artSec #bigimg img {
+    max-width: 100%;
+  }
+
+  /* line 570, ../../../scss/styles.scss */
+  #artSec h3 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  /* line 577, ../../../scss/styles.scss */
+  #aboutSec p {
+    font-size: 20px;
+  }
+
+  /* line 581, ../../../scss/styles.scss */
+  #contactSec li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 498px) {
+  /* line 587, ../../../scss/styles.scss */
+  .nav li a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 340px) {
+  /* line 594, ../../../scss/styles.scss */
+  #codeSec h1 {
+    font-size: 25px;
+  }
+
+  /* line 597, ../../../scss/styles.scss */
+  #artSec #box {
+    width: 280px;
+    height: 1337px;
+    padding: 2px;
+  }
+
+  /* line 603, ../../../scss/styles.scss */
+  #artSec #box img {
+    max-width: 272px;
+    max-height: 300px;
+  }
+
+  /* line 608, ../../../scss/styles.scss */
+  #artSec #bigimg {
+    display: none;
+  }
+
+  /* line 612, ../../../scss/styles.scss */
+  #artSec #bigimg img {
+    display: none;
+  }
+
+  /* line 616, ../../../scss/styles.scss */
+  #aboutSec h1 {
+    font-size: 40px;
+  }
+
+  /* line 619, ../../../scss/styles.scss */
+  #workSec h1 {
+    font-size: 40px;
+  }
+
+  /* line 622, ../../../scss/styles.scss */
+  #artSec h1 {
+    font-size: 40px;
+  }
+
+  /* line 625, ../../../scss/styles.scss */
+  #contactSec h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 300px) {
+  /* line 631, ../../../scss/styles.scss */
+  #artSec #box {
+    width: 195px;
+    height: 930px;
+    padding: 2px;
+  }
+
+  /* line 637, ../../../scss/styles.scss */
+  #artSec #box img {
+    max-width: 187px;
+  }
+
+  /* line 641, ../../../scss/styles.scss */
+  #artSec #bigimg {
+    display: none;
+  }
+
+  /* line 645, ../../../scss/styles.scss */
+  #artSec #bigimg img {
+    display: none;
+  }
+
+  /* line 649, ../../../scss/styles.scss */
+  #contactSec h1 {
+    font-size: 35px;
+  }
+
+  /* line 653, ../../../scss/styles.scss */
+  #contactSec li {
+    font-size: 15px;
+  }
+
+  /* line 657, ../../../scss/styles.scss */
+  #workSec .work {
+    max-width: 170px;
+  }
+
+  /* line 661, ../../../scss/styles.scss */
+  #header h1 {
+    font-size: 40px;
+  }
+
+  /* line 664, ../../../scss/styles.scss */
+  #header p {
+    font-size: 13px;
+  }
+
+  /* line 668, ../../../scss/styles.scss */
+  #workSec h1 {
+    font-size: 30px;
+  }
+
+  /* line 672, ../../../scss/styles.scss */
+  #workSec p {
+    font-size: 13px;
+  }
+}
