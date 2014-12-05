@@ -16,10 +16,6 @@ var config = {
 
 	pkg: grunt.file.readJSON("package.json"),
 
-	options: {
-		namespace: "gms"
-	},
-
 	paths: {
 		src          : "src",
 		dist         : "release",

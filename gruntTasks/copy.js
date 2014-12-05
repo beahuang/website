@@ -17,7 +17,9 @@ module.exports = function( grunt ){
                             '{,*/}*.html',
                             '.htaccess',
                             'assets/images/{,*/}*.{webp,gif}',
-                            'assets/fonts/{,*/}*.*'
+                            'assets/resume.pdf',
+                            'assets/fonts/{,*/}*.*',
+                            'assets/js/*.js'
                         ]
                     }
                 ]

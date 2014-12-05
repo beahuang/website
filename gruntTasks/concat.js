@@ -7,9 +7,9 @@ module.exports = function( grunt ){
         concat: {
             thirdparty: {
                 src: [
-                    '<%= paths.src %>/public/assets/js/thirdparty/*.js'
+                    '<%= paths.src %>/public/assets/js/libs/*.js'
                 ],
-                dest: '<%= paths.dist %>/public/assets/js/thirdparty.js',
+                dest: '<%= paths.dist %>/public/assets/js/libs.js',
             }
         }
     };
