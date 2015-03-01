@@ -29,7 +29,7 @@ module.exports = function( grunt ){
                 dot: true,
                 cwd: '<%= paths.src %>/public/assets/css',
                 dest: '<%= paths.dist %>/public/assets/css/',
-                src: '{,*/}*.css'
+                src: 'styles.css'
             }
         }
     };
