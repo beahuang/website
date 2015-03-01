@@ -4,6 +4,11 @@ body{
 
 h1{
     margin-left:20px;
+    font-size:4.5em;
+}
+
+.row {
+    overflow: hidden;
 }
 
 /*NAVIGATION BAR STYLES*/
@@ -111,7 +116,6 @@ h1{
     font-family: Raleway;
 
     h1{
-        font-size:60px;
         color:black;
         padding-bottom:30px;
         font-weight:700;
@@ -211,7 +215,7 @@ h1{
                 text-transform: uppercase;
                 position: relative;
                 letter-spacing: 1px;
-                font-size: 22px;
+                font-size: 2em;
                 padding: 65px 0 0 0;
                 height: 110px;
                 font-family: 'Open Sans', Arial, sans-serif;
@@ -224,7 +228,7 @@ h1{
                 padding: 10px 5px;
                 font-style: italic;
                 margin: 0 30px;
-                font-size: 12px;
+                font-size: 1em;
                 border-top: 1px solid rgba(255,255,255,0.5);
                 font-family: 'Open Sans', Arial, sans-serif;
                 a {
@@ -233,7 +237,7 @@ h1{
                     font-style: normal;
                     font-weight: 700;
                     text-transform: uppercase;
-                    font-size: 9px;
+                    font-size: 1em;
                     letter-spacing: 1px;
                     padding-top: 4px;
                     font-family: 'Open Sans', Arial, sans-serif;
@@ -260,7 +264,6 @@ h1{
     padding-bottom: 50px;
 
     h1{
-        font-size:60px;
         color:brown;
         padding-bottom:10px;
         font-weight:700;
@@ -329,11 +332,11 @@ h1{
     padding:30px;
 
     h1{
-        font-size:40px;
         color:white;
         text-align: left;
         padding-bottom:30px;
         padding-top: 50px;
+        font-size: 40px;
     }
     img{
         border-radius: 12%;
@@ -351,7 +354,7 @@ h1{
         margin: 0 auto;
         text-align: center;
         padding-bottom: 40px;
-        font-size:10px;
+        font-size: 10px;
     }
 }
 
@@ -366,7 +369,6 @@ h1{
     border-bottom: 1.5px solid grey;
 
     h1{
-        font-size:60px;
         color:black;
         padding-bottom:30px;
         padding-top: 50px;
@@ -374,6 +376,7 @@ h1{
     }
     #art{
         padding:40px;
+        overflow: hidden;
         #box {
             margin: 0 auto;
             width: 615px;
@@ -402,15 +405,14 @@ h1{
         height:384px;
     }
     h3 {
-        font-size: 44px;
         color: white;
         text-align: center;
         margin-top: 150px;
     }
     #desc {
-        font-size: 20px;
         margin-top:10px;
         text-align: center;
+        font-size: 1.3em;
     }
 }
 
@@ -503,8 +505,9 @@ h1{
     }
 }
 
-#owl-demo {
-    margin: 20px;
+#slider {
+    margin: 0 auto;
+    width: 95%;
     .item{
         margin: 3px;
     }
@@ -573,28 +576,16 @@ h1{
             display: none;
         }
     }
+
+    #artSec .col-md-6 {
+        display: none;
+    }
 }
 
 @media  (max-width:530px) {
-    #header #txt h1 {
+    h1 {
         margin-left: 0px;
-        font-size: 3em;
-    }
-
-    #artSec {
-        #bigimg{
-            height: 281px;
-            width: 350px;
-            h3 {
-                font-size: 30px;
-                color: white;
-                text-align: center;
-                margin-top: 100px;
-            }
-            img{
-                max-width: 100%
-            }
-        }
+        font-size: 4em;
     }
 
     #aboutSec ul {
@@ -614,23 +605,9 @@ h1{
     }
 }
 
-@media  (max-width: 460px){
-    #artSec #box {
-        width: 350px;
-        height: 420px;
-        img {
-            max-height:150px;
-            max-width:150px;
-        }
-    }
-}
-
 @media (max-width: 340px){
-
-    #artSec {
-        #box,#bigimg, #desc {
-            display: none;
-        }
+    h1 {
+        font-size: 3.5em;
     }
 
     #skillSec {

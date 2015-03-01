@@ -2,7 +2,7 @@
 /* global $ */
 $(document).ready(function(){
 
-	$("#owl-demo").owlCarousel({
+	$("#slider").owlCarousel({
 
       autoPlay: 3000, //Set AutoPlay to 3 seconds
 
@@ -38,7 +38,6 @@ $(document).ready(function(){
 		if($(window).scrollTop() + 100 > $(document).height() - $(window).height() ){
 			nav.removeClass('selected');
 			$('a[href="#contactSec"]').addClass('selected');
-			console.log('hey');
 		}
 	});
 
@@ -98,13 +97,4 @@ $(window).scroll(function() {
 		$(".back-to-top").fadeOut(duration);
 	}
 });
-
-// var top1 = 1500;
-// $(window).scroll(function() {
-// 	if ($(this).scrollTop() > top1) {
-// 		$(".comp").css("background-position","0 100%");
-// 	}
-// });
-
-
 }); 

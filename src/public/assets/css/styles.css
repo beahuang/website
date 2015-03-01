@@ -6,10 +6,16 @@ body {
 /* line 5, ../../../scss/styles.scss */
 h1 {
   margin-left: 20px;
+  font-size: 4.5em;
+}
+
+/* line 10, ../../../scss/styles.scss */
+.row {
+  overflow: hidden;
 }
 
 /*NAVIGATION BAR STYLES*/
-/* line 10, ../../../scss/styles.scss */
+/* line 15, ../../../scss/styles.scss */
 .menu {
   width: 100%;
   position: fixed;
@@ -17,26 +23,26 @@ h1 {
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0px 1px 2px grey;
 }
-/* line 16, ../../../scss/styles.scss */
+/* line 21, ../../../scss/styles.scss */
 .menu .icon {
   padding: 10px 20px;
   display: none;
 }
-/* line 19, ../../../scss/styles.scss */
+/* line 24, ../../../scss/styles.scss */
 .menu .icon img {
   height: 16px;
 }
-/* line 23, ../../../scss/styles.scss */
+/* line 28, ../../../scss/styles.scss */
 .menu .nav {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-/* line 28, ../../../scss/styles.scss */
+/* line 33, ../../../scss/styles.scss */
 .menu .nav li {
   display: inline;
 }
-/* line 31, ../../../scss/styles.scss */
+/* line 36, ../../../scss/styles.scss */
 .menu .nav li a {
   text-decoration: none;
   font-size: 1em;
@@ -46,7 +52,7 @@ h1 {
   text-decoration: none;
   padding: 10px 20px;
 }
-/* line 40, ../../../scss/styles.scss */
+/* line 45, ../../../scss/styles.scss */
 .menu .nav li a:before {
   content: "";
   position: absolute;
@@ -58,18 +64,18 @@ h1 {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 52, ../../../scss/styles.scss */
+/* line 57, ../../../scss/styles.scss */
 .menu .nav li a:hover, .menu .nav li a.selected {
   color: white;
   background-color: rgba(163, 163, 163, 0.3);
 }
-/* line 55, ../../../scss/styles.scss */
+/* line 60, ../../../scss/styles.scss */
 .menu .nav li a:hover:before, .menu .nav li a.selected:before {
   width: 100%;
 }
 
 /*Header SECTION STYLES*/
-/* line 65, ../../../scss/styles.scss */
+/* line 70, ../../../scss/styles.scss */
 #header {
   background: url("../images/backgrounds/me.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -80,26 +86,26 @@ h1 {
   border-bottom: 1.5px solid grey;
   transition: all, 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-/* line 75, ../../../scss/styles.scss */
+/* line 80, ../../../scss/styles.scss */
 #header #txt {
   top: 30%;
   display: none;
 }
-/* line 79, ../../../scss/styles.scss */
+/* line 84, ../../../scss/styles.scss */
 #header #txt h1 {
   font-size: 4.5em;
   color: white;
   text-align: center;
   padding-top: 90px;
 }
-/* line 85, ../../../scss/styles.scss */
+/* line 90, ../../../scss/styles.scss */
 #header #txt p {
   font-size: 1em;
   text-align: center;
   color: white;
 }
 
-/* line 93, ../../../scss/styles.scss */
+/* line 98, ../../../scss/styles.scss */
 .section-overlay-mask {
   position: absolute;
   left: 0;
@@ -111,7 +117,7 @@ h1 {
 }
 
 /*ABOUT SECTION STYLES*/
-/* line 103, ../../../scss/styles.scss */
+/* line 108, ../../../scss/styles.scss */
 #aboutSec {
   border-bottom: 1px solid #dbdbdb;
   padding-bottom: 50px;
@@ -122,23 +128,22 @@ h1 {
   background-size: cover;
   font-family: Raleway;
 }
-/* line 113, ../../../scss/styles.scss */
+/* line 118, ../../../scss/styles.scss */
 #aboutSec h1 {
-  font-size: 60px;
   color: black;
   padding-bottom: 30px;
   font-weight: 700;
   padding-top: 75px;
 }
-/* line 119, ../../../scss/styles.scss */
+/* line 123, ../../../scss/styles.scss */
 #aboutSec h1 span {
   font-size: 0.5em;
 }
-/* line 124, ../../../scss/styles.scss */
+/* line 128, ../../../scss/styles.scss */
 #aboutSec p {
   padding-left: 20px;
 }
-/* line 128, ../../../scss/styles.scss */
+/* line 132, ../../../scss/styles.scss */
 #aboutSec .circ {
   padding-top: 30px;
   width: 300px;
@@ -148,30 +153,30 @@ h1 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-/* line 139, ../../../scss/styles.scss */
+/* line 143, ../../../scss/styles.scss */
 #aboutSec .circ.ch-big {
   background-image: url(../images/circbig.jpg);
 }
-/* line 144, ../../../scss/styles.scss */
+/* line 148, ../../../scss/styles.scss */
 #aboutSec h6 {
   text-align: center;
   font-size: 1.5em;
   padding-top: 20px;
   padding-bottom: 5px;
 }
-/* line 151, ../../../scss/styles.scss */
+/* line 155, ../../../scss/styles.scss */
 #aboutSec ul {
   display: flex;
   justify-content: center;
 }
-/* line 154, ../../../scss/styles.scss */
+/* line 158, ../../../scss/styles.scss */
 #aboutSec ul li {
   width: 200px;
   height: 200px;
   display: inline-block;
   margin: 10px;
 }
-/* line 161, ../../../scss/styles.scss */
+/* line 165, ../../../scss/styles.scss */
 #aboutSec ul .ch-item {
   width: 100%;
   height: 100%;
@@ -181,28 +186,28 @@ h1 {
   box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in-out;
 }
-/* line 174, ../../../scss/styles.scss */
+/* line 178, ../../../scss/styles.scss */
 #aboutSec ul .ch-item:hover .ch-info {
   box-shadow: inset 0 0 0 110px rgba(0, 59, 241, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
   opacity: 1;
   transform: scale(1);
 }
-/* line 184, ../../../scss/styles.scss */
+/* line 188, ../../../scss/styles.scss */
 #aboutSec ul .ch-img-1 {
   background-image: url(../images/circ1.jpg);
   background-size: contain;
 }
-/* line 189, ../../../scss/styles.scss */
+/* line 193, ../../../scss/styles.scss */
 #aboutSec ul .ch-img-2 {
   background-image: url(../images/circ2.jpg);
   background-size: contain;
 }
-/* line 194, ../../../scss/styles.scss */
+/* line 198, ../../../scss/styles.scss */
 #aboutSec ul .ch-img-3 {
   background-image: url(../images/circ3.jpg);
   background-size: contain;
 }
-/* line 199, ../../../scss/styles.scss */
+/* line 203, ../../../scss/styles.scss */
 #aboutSec ul .ch-info {
   position: absolute;
   width: 100%;
@@ -214,48 +219,48 @@ h1 {
   transform: scale(0);
   backface-visibility: hidden;
 }
-/* line 209, ../../../scss/styles.scss */
+/* line 213, ../../../scss/styles.scss */
 #aboutSec ul .ch-info h3 {
   color: #fff;
   text-transform: uppercase;
   position: relative;
   letter-spacing: 1px;
-  font-size: 22px;
+  font-size: 2em;
   padding: 65px 0 0 0;
   height: 110px;
   font-family: 'Open Sans', Arial, sans-serif;
   text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
-/* line 222, ../../../scss/styles.scss */
+/* line 226, ../../../scss/styles.scss */
 #aboutSec ul .ch-info p {
   color: #fff;
   padding: 10px 5px;
   font-style: italic;
   margin: 0 30px;
-  font-size: 12px;
+  font-size: 1em;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   font-family: 'Open Sans', Arial, sans-serif;
 }
-/* line 230, ../../../scss/styles.scss */
+/* line 234, ../../../scss/styles.scss */
 #aboutSec ul .ch-info p a {
   display: block;
   color: rgba(255, 255, 255, 0.7);
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 9px;
+  font-size: 1em;
   letter-spacing: 1px;
   padding-top: 4px;
   font-family: 'Open Sans', Arial, sans-serif;
 }
-/* line 240, ../../../scss/styles.scss */
+/* line 244, ../../../scss/styles.scss */
 #aboutSec ul .ch-info p a:hover {
   color: rgba(255, 242, 34, 0.8);
 }
 
 /*WORK SECTION STYLING*/
-/* line 252, ../../../scss/styles.scss */
+/* line 256, ../../../scss/styles.scss */
 #skillSec {
   font-family: 'Raleway', sans-serif;
   background: url("../images/backgrounds/desk.jpg") no-repeat center center fixed;
@@ -266,23 +271,22 @@ h1 {
   border-bottom: 1.5px solid grey;
   padding-bottom: 50px;
 }
-/* line 262, ../../../scss/styles.scss */
+/* line 266, ../../../scss/styles.scss */
 #skillSec h1 {
-  font-size: 60px;
   color: brown;
   padding-bottom: 10px;
   font-weight: 700;
   padding-top: 15px;
 }
-/* line 269, ../../../scss/styles.scss */
+/* line 272, ../../../scss/styles.scss */
 #skillSec h1 span {
   font-size: .5em;
 }
-/* line 274, ../../../scss/styles.scss */
+/* line 277, ../../../scss/styles.scss */
 #skillSec h5 {
   text-align: center;
 }
-/* line 278, ../../../scss/styles.scss */
+/* line 281, ../../../scss/styles.scss */
 #skillSec .comp {
   position: relative;
   background-image: url(../images/icons/computer.png);
@@ -293,39 +297,39 @@ h1 {
   width: 860px;
   height: 500px;
 }
-/* line 288, ../../../scss/styles.scss */
+/* line 291, ../../../scss/styles.scss */
 #skillSec .comp .comp-screen {
   height: 75%;
   position: relative;
 }
-/* line 293, ../../../scss/styles.scss */
+/* line 296, ../../../scss/styles.scss */
 #skillSec .comp:hover {
   background-position: 0 100.7%;
 }
-/* line 295, ../../../scss/styles.scss */
+/* line 298, ../../../scss/styles.scss */
 #skillSec .comp:hover .icon {
   opacity: 1;
 }
-/* line 300, ../../../scss/styles.scss */
+/* line 303, ../../../scss/styles.scss */
 #skillSec .comp .icon {
   margin-left: 20%;
   opacity: 0;
   transition: opacity 0.4s ease-in;
 }
-/* line 304, ../../../scss/styles.scss */
+/* line 307, ../../../scss/styles.scss */
 #skillSec .comp .icon li {
   text-decoration: none;
   display: inline;
   position: relative;
 }
-/* line 308, ../../../scss/styles.scss */
+/* line 311, ../../../scss/styles.scss */
 #skillSec .comp .icon li img {
   width: 50px;
   cursor: pointer;
 }
 
 /*CODE SECTION STYLING*/
-/* line 318, ../../../scss/styles.scss */
+/* line 321, ../../../scss/styles.scss */
 #codeSec {
   font-family: 'Press Start 2P', cursive;
   background: url("../images/backgrounds/terminal.jpg") no-repeat center center fixed;
@@ -339,27 +343,27 @@ h1 {
   padding-bottom: 50px;
   padding: 30px;
 }
-/* line 331, ../../../scss/styles.scss */
+/* line 334, ../../../scss/styles.scss */
 #codeSec h1 {
-  font-size: 40px;
   color: white;
   text-align: left;
   padding-bottom: 30px;
   padding-top: 50px;
+  font-size: 40px;
 }
-/* line 338, ../../../scss/styles.scss */
+/* line 341, ../../../scss/styles.scss */
 #codeSec img {
   border-radius: 12%;
   display: block;
   margin: auto;
 }
-/* line 344, ../../../scss/styles.scss */
+/* line 347, ../../../scss/styles.scss */
 #codeSec h2 {
   text-align: center;
   color: white;
   font-size: 20px;
 }
-/* line 350, ../../../scss/styles.scss */
+/* line 353, ../../../scss/styles.scss */
 #codeSec p {
   margin: 0 auto;
   text-align: center;
@@ -368,7 +372,7 @@ h1 {
 }
 
 /*ART SECTION STYLING*/
-/* line 360, ../../../scss/styles.scss */
+/* line 363, ../../../scss/styles.scss */
 #artSec {
   background: url("../images/backgrounds/paper.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -377,19 +381,19 @@ h1 {
   background-size: cover;
   border-bottom: 1.5px solid grey;
 }
-/* line 368, ../../../scss/styles.scss */
+/* line 371, ../../../scss/styles.scss */
 #artSec h1 {
-  font-size: 60px;
   color: black;
   padding-bottom: 30px;
   padding-top: 50px;
   margin-left: 40px;
 }
-/* line 375, ../../../scss/styles.scss */
+/* line 377, ../../../scss/styles.scss */
 #artSec #art {
   padding: 40px;
+  overflow: hidden;
 }
-/* line 377, ../../../scss/styles.scss */
+/* line 380, ../../../scss/styles.scss */
 #artSec #art #box {
   margin: 0 auto;
   width: 615px;
@@ -399,7 +403,7 @@ h1 {
   margin-bottom: 10px;
   padding-bottom: 20px;
 }
-/* line 385, ../../../scss/styles.scss */
+/* line 388, ../../../scss/styles.scss */
 #artSec #art #box img {
   border: solid 1px white;
   margin: 2px;
@@ -409,44 +413,43 @@ h1 {
   height: auto;
   float: left;
 }
-/* line 393, ../../../scss/styles.scss */
+/* line 396, ../../../scss/styles.scss */
 #artSec #art #box img:hover {
   opacity: .6;
 }
-/* line 399, ../../../scss/styles.scss */
+/* line 402, ../../../scss/styles.scss */
 #artSec #bigimg {
   width: 480px;
   margin: 0 auto;
   height: 384px;
 }
-/* line 404, ../../../scss/styles.scss */
+/* line 407, ../../../scss/styles.scss */
 #artSec h3 {
-  font-size: 44px;
   color: white;
   text-align: center;
   margin-top: 150px;
 }
-/* line 410, ../../../scss/styles.scss */
+/* line 412, ../../../scss/styles.scss */
 #artSec #desc {
-  font-size: 20px;
   margin-top: 10px;
   text-align: center;
+  font-size: 1.3em;
 }
 
 /*CONTACT SECTION STYLING*/
-/* line 418, ../../../scss/styles.scss */
+/* line 420, ../../../scss/styles.scss */
 #contactSec {
   background: url("../images/backgrounds/city.png") center no-repeat;
   background-size: cover;
 }
-/* line 422, ../../../scss/styles.scss */
+/* line 424, ../../../scss/styles.scss */
 #contactSec h1 {
   font-size: 2em;
   color: #3e5068;
   text-shadow: 0px 2px 2px grey;
   margin-left: 55px;
 }
-/* line 428, ../../../scss/styles.scss */
+/* line 430, ../../../scss/styles.scss */
 #contactSec .box {
   height: 295px;
   width: 260px;
@@ -456,7 +459,7 @@ h1 {
   padding: 10px;
   border-radius: 50px;
 }
-/* line 436, ../../../scss/styles.scss */
+/* line 438, ../../../scss/styles.scss */
 #contactSec .box .circ {
   margin: 0 auto;
   display: block;
@@ -468,7 +471,7 @@ h1 {
   background-size: contain;
   background-image: url(../images/circbig2.jpg);
 }
-/* line 447, ../../../scss/styles.scss */
+/* line 449, ../../../scss/styles.scss */
 #contactSec .box #social {
   text-decoration: none;
   list-style-type: none;
@@ -477,19 +480,19 @@ h1 {
   margin: 0;
   padding: 10px 0;
 }
-/* line 454, ../../../scss/styles.scss */
+/* line 456, ../../../scss/styles.scss */
 #contactSec .box #social li {
   display: inline-block;
 }
-/* line 457, ../../../scss/styles.scss */
+/* line 459, ../../../scss/styles.scss */
 #contactSec .box #social li img {
   width: 50px;
 }
-/* line 462, ../../../scss/styles.scss */
+/* line 464, ../../../scss/styles.scss */
 #contactSec .box #social li:hover img {
   opacity: 0.7;
 }
-/* line 469, ../../../scss/styles.scss */
+/* line 471, ../../../scss/styles.scss */
 #contactSec .triangle {
   width: 0;
   height: 0;
@@ -499,11 +502,11 @@ h1 {
   margin: 0 auto;
 }
 
-/* line 479, ../../../scss/styles.scss */
+/* line 481, ../../../scss/styles.scss */
 .map {
   height: 200px;
 }
-/* line 481, ../../../scss/styles.scss */
+/* line 483, ../../../scss/styles.scss */
 .map h1 {
   position: absolute;
   z-index: 10000;
@@ -511,12 +514,12 @@ h1 {
   text-shadow: 0px 1px 4px black !important;
   font-family: Raleway;
 }
-/* line 488, ../../../scss/styles.scss */
+/* line 490, ../../../scss/styles.scss */
 .map #map-canvas {
   height: 100%;
 }
 
-/* line 493, ../../../scss/styles.scss */
+/* line 495, ../../../scss/styles.scss */
 .back-to-top {
   position: fixed;
   bottom: 2em;
@@ -526,21 +529,22 @@ h1 {
   display: none;
   opacity: .65;
 }
-/* line 501, ../../../scss/styles.scss */
+/* line 503, ../../../scss/styles.scss */
 .back-to-top img {
   width: 50px;
 }
 
-/* line 506, ../../../scss/styles.scss */
-#owl-demo {
-  margin: 20px;
-}
 /* line 508, ../../../scss/styles.scss */
-#owl-demo .item {
-  margin: 3px;
+#slider {
+  margin: 0 auto;
+  width: 95%;
 }
 /* line 511, ../../../scss/styles.scss */
-#owl-demo img {
+#slider .item {
+  margin: 3px;
+}
+/* line 514, ../../../scss/styles.scss */
+#slider img {
   display: block;
   width: 90%;
   height: auto;
@@ -548,136 +552,112 @@ h1 {
 
 /*MEDIA QUERIES*/
 @media all and (max-width: 1240px) and (min-width: 990px) {
-  /* line 521, ../../../scss/styles.scss */
+  /* line 524, ../../../scss/styles.scss */
   #artSec #box {
     width: 350px;
     height: 420px;
   }
-  /* line 524, ../../../scss/styles.scss */
+  /* line 527, ../../../scss/styles.scss */
   #artSec #box img {
     max-height: 150px;
     max-width: 150px;
   }
 }
 @media (max-width: 900px) {
-  /* line 533, ../../../scss/styles.scss */
+  /* line 536, ../../../scss/styles.scss */
   #skillSec .comp {
     background-image: url(../images/icons/computer-md.png);
     width: 650px;
     height: 376px;
   }
-  /* line 537, ../../../scss/styles.scss */
+  /* line 540, ../../../scss/styles.scss */
   #skillSec .comp .icon {
     margin-left: 16%;
   }
-  /* line 539, ../../../scss/styles.scss */
+  /* line 542, ../../../scss/styles.scss */
   #skillSec .comp .icon li img {
     width: 40px;
   }
 }
 @media (max-width: 725px) {
-  /* line 549, ../../../scss/styles.scss */
+  /* line 552, ../../../scss/styles.scss */
   #aboutSec ul li {
     width: 150px;
     height: 150px;
   }
-  /* line 553, ../../../scss/styles.scss */
+  /* line 556, ../../../scss/styles.scss */
   #aboutSec ul .ch-item {
     box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 5px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
   }
-  /* line 555, ../../../scss/styles.scss */
+  /* line 558, ../../../scss/styles.scss */
   #aboutSec ul .ch-item:hover .ch-info {
     box-shadow: inset 0 0 0 110px rgba(0, 59, 241, 0.4), inset 0 0 0 5px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1);
   }
-  /* line 560, ../../../scss/styles.scss */
+  /* line 563, ../../../scss/styles.scss */
   #aboutSec ul .ch-item:hover .ch-info h3 {
     padding: 50px 0 0 0;
   }
 }
 @media (max-width: 650px) {
-  /* line 569, ../../../scss/styles.scss */
+  /* line 572, ../../../scss/styles.scss */
   .menu .icon {
     display: block;
   }
-  /* line 572, ../../../scss/styles.scss */
+  /* line 575, ../../../scss/styles.scss */
   .menu .nav {
+    display: none;
+  }
+
+  /* line 580, ../../../scss/styles.scss */
+  #artSec .col-md-6 {
     display: none;
   }
 }
 @media (max-width: 530px) {
-  /* line 579, ../../../scss/styles.scss */
-  #header #txt h1 {
+  /* line 586, ../../../scss/styles.scss */
+  h1 {
     margin-left: 0px;
-    font-size: 3em;
+    font-size: 4em;
   }
 
-  /* line 585, ../../../scss/styles.scss */
-  #artSec #bigimg {
-    height: 281px;
-    width: 350px;
-  }
-  /* line 588, ../../../scss/styles.scss */
-  #artSec #bigimg h3 {
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    margin-top: 100px;
-  }
-  /* line 594, ../../../scss/styles.scss */
-  #artSec #bigimg img {
-    max-width: 100%;
-  }
-
-  /* line 600, ../../../scss/styles.scss */
+  /* line 591, ../../../scss/styles.scss */
   #aboutSec ul {
     display: block;
   }
 
-  /* line 605, ../../../scss/styles.scss */
+  /* line 596, ../../../scss/styles.scss */
   #skillSec .comp {
     background-image: url(../images/icons/computer-sm.png);
     width: 400px;
     height: 231.5px;
   }
-  /* line 610, ../../../scss/styles.scss */
+  /* line 601, ../../../scss/styles.scss */
   #skillSec .comp .icon li img {
     width: 25px;
   }
 }
-@media (max-width: 460px) {
-  /* line 618, ../../../scss/styles.scss */
-  #artSec #box {
-    width: 350px;
-    height: 420px;
-  }
-  /* line 621, ../../../scss/styles.scss */
-  #artSec #box img {
-    max-height: 150px;
-    max-width: 150px;
-  }
-}
 @media (max-width: 340px) {
-  /* line 631, ../../../scss/styles.scss */
-  #artSec #box, #artSec #bigimg, #artSec #desc {
-    display: none;
+  /* line 609, ../../../scss/styles.scss */
+  h1 {
+    font-size: 3.5em;
   }
 
-  /* line 637, ../../../scss/styles.scss */
+  /* line 614, ../../../scss/styles.scss */
   #skillSec .comp {
     background-image: url(../images/icons/computer-xs.png);
     width: 275px;
     height: 159px;
   }
-  /* line 642, ../../../scss/styles.scss */
+  /* line 619, ../../../scss/styles.scss */
   #skillSec .comp .icon {
     margin-left: 15%;
   }
-  /* line 644, ../../../scss/styles.scss */
+  /* line 621, ../../../scss/styles.scss */
   #skillSec .comp .icon li img {
     width: 16px;
   }
 
-  /* line 651, ../../../scss/styles.scss */
+  /* line 628, ../../../scss/styles.scss */
   #header #txt h1 {
     margin-left: 0px;
     font-size: 2em;

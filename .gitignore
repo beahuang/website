@@ -1,5 +1,7 @@
-**/.DS_Store
+*.DS_Store
 *.db
 node_modules/
 bower_components/
+release/
+.sass-cache
 
